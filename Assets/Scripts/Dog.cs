@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dog : MonoBehaviour
+public class Dog : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    //ตั้ง name,health,speed,hanger ตามที่โจตย์บอก
+    private void Start()
     {
-        
+        Init("Dog", 10, 3f, 0,"Meat");
     }
 
-    // Update is called once per frame
-    void Update()
+    public string Breed;
+
+    public void Fetch()
     {
-        
+        Debug.Log($"{name} fetch");
     }
 }

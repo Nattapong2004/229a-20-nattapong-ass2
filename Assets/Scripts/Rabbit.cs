@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rabbit : MonoBehaviour
+public class Rabbit : Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    //ตั้ง name,health,speed,hanger ตามที่โจตย์บอก
+    private void Start()
     {
-        
+        Init("Rabbit", 10, 3f, 0,"Plant");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
