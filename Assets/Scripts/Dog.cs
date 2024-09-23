@@ -7,10 +7,19 @@ public class Dog : Animal
     //ตั้ง name,health,speed,hanger ตามที่โจตย์บอก
     private void Start()
     {
-        Init("Dog", 10, 3f, 0,"Meat");
+        Init("Dog", 10, 3f, 0, "Meat");
     }
 
-    public string Breed;
+    private string breed;
+
+
+    public string Breed
+    {get { return breed; }
+        set { breed = value; }
+
+     }
+        
+        
 
     public void Fetch()
     {

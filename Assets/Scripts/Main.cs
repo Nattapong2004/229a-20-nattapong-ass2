@@ -21,7 +21,6 @@ public class Main : MonoBehaviour
         Cat.Move();
         Cat.Sleep();
         Cat.Climb();
-        Cat.Hunger =+ 20;
 
 
         //พฤติกรรมของหมา
@@ -29,17 +28,11 @@ public class Main : MonoBehaviour
         Dog.Move();
         Dog.Sleep();
         Dog.Fetch();
-        Dog.Hunger = +20;
 
         //พฤติกรรมของกระต่าย
         Rabbit.Eat();
         Rabbit.Move();
         Rabbit.Sleep();
-        Rabbit.Hunger = +20;
-
-        Debug.Log($"{Cat.name} has health: {Cat.Health},speed: {Cat.Speed},Hugger: {Cat.Hunger}");
-        Debug.Log($"{Dog.name} has health: {Dog.Health},speed: {Dog.Speed},Hugger: {Dog.Hunger}");
-        Debug.Log($"{Rabbit.name} has health: {Rabbit.Health},speed: {Rabbit.Speed},Hugger: {Rabbit.Hunger}");
 
     }
 

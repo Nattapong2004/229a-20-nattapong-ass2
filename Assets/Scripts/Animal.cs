@@ -15,19 +15,19 @@ public class Animal : MonoBehaviour
     {
         get { return _name; }
 
-        set { }
+        set { name = value; }
     }    
     public int  Health
     {
         get { return health; }
 
-        set {  }
+        set { health = value; }
     }
     public float Speed
     {
         get { return speed; }
 
-        private set { speed = 3f; }
+        private set { speed = value; }
     }
 
     public float Hunger
